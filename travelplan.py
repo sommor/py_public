@@ -37,7 +37,6 @@ for i in travelplan:
 
 #5) Follow these steps to allow the user to enter a space in the itinerary and print
 #   the item in the specified space.
-
 #a) First, retrieve an index i1 which represents one of the three lists in the itinerary,
 #   where valid input will be between 0 and the length of itinerary minus 1 (which we have
 #   reviewed starts the index at 0, and a list of 5 items will therefore have 4 as the
@@ -60,6 +59,3 @@ if i1 in range(len(travelplan)) and i2 in range(len(travelplan[i1])):
    print(travelplan[i1][i2])
 else:
     print("Invalid input.")
-
-
-
