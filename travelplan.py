@@ -24,7 +24,7 @@ for i in range(5):
 #print(clothing, departures) #print to test
 
 #3) Now create a list that can contain the other lists you have written.
-# 	Create a list itinerary, and add places, clothing, and departure date list.
+#   Create a list itinerary, and add places, clothing, and departure date list.
 
 travelplan = [destinations, clothing, departures]
 #print(travelplan) #print to test
@@ -41,24 +41,25 @@ for i in travelplan:
 #a) First, retrieve an index i1 which represents one of the three lists in the itinerary,
 #   where valid input will be between 0 and the length of itinerary minus 1 (which we have
 #   reviewed starts the index at 0, and a list of 5 items will therefore have 4 as the
-#   highest index) .
+#   highest index).
 
-i1 = int(input("Which list do you want to look at? "))
+i1 = int(input("Which list do you want to look at (1-3): "))
 i1 = i1 - 1
-
-if i1 in range(len(travelplan)):
-    print(travelplan[i1])
-else:
-    print("Doesn't exist")
 
 #b) Then an index i2 representing one of the five elements in the selected list, where
 #   valid input will be between 0 and the length of the list minus 1.
 
-i2 = int(input("Which item do you want to look at? "))
+i2 = int(input("Which item do you want to look at (1-5)? "))
 i2 = i2 - 1
-
-
 
 #c) Use an if-check to test that the two numbers the user has entered are valid values.
 #   If the numbers are possible places in the lists, they should be used to print
 #   itinerary [i1] [i2]. If the numbers are not valid locations, print "Invalid input!"
+
+if i1 in range(len(travelplan)) and i2 in range(len(travelplan[i1])):
+   print(travelplan[i1][i2])
+else:
+    print("Invalid input.")
+
+
+
