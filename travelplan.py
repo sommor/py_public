@@ -23,8 +23,8 @@ for i in range(5):
     departures.append(d)
 #print(clothing, departures) #print to test
 
-#3) Nå skal du lage en liste som kan inneholde de andre listene du har skrevet.
-#   Opprett en liste reiseplan, og legg til steder, klesplagg og avreisedatoeri lista.
+#3) Now create a list that can contain the other lists you have written.
+# 	Create a list itinerary, and add places, clothing, and departure date list.
 
 travelplan = [destinations, clothing, departures]
 #print(travelplan) #print to test
